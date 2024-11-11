@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Flight Log</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Add New Flight Log</h2>
+<form action="create-log.php" method="POST">
+    <label for="tailNumber">Tail Number:</label>
+    <input type="text" id="tailNumber" name="tailNumber" required>
+
+    <label for="flightID">Flight ID:</label>
+    <input type="text" id="flightID" name="flightID" required>
+
+    <label for="takeoff">Takeoff:</label>
+    <input type="datetime-local" id="takeoff" name="takeoff" required>
+
+    <label for="landing">Landing:</label>
+    <input type="datetime-local" id="landing" name="landing" required>
+
+    <button type="submit">Add Flight Log</button>
+</form>
+<a href="dashboard.php">Back to Dashboard</a>
+</body>
+</html>
